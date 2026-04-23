@@ -23,7 +23,7 @@ export default async function PortalLayout({
             image: session.user.image,
           }}
         />
-        <main className="flex-1 overflow-y-auto bg-fs-warm-white p-6">
+        <main className="flex flex-1 flex-col overflow-y-auto bg-fs-warm-white p-6">
           {children}
         </main>
       </div>

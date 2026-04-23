@@ -67,7 +67,7 @@ export default async function AppPage({ params }: Props) {
       </div>
       <iframe
         src={app.url}
-        className="flex-1 border-0"
+        className="h-0 min-h-0 flex-1 border-0"
         title={app.name}
         allow="clipboard-read; clipboard-write"
       />
