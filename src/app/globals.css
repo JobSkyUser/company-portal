@@ -1,26 +1,63 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --fs-espresso: #21170f;
+  --fs-copper: #9f744b;
+  --fs-copper-light: #b8926f;
+  --fs-warm-white: #f3f2f0;
+  --fs-warm-gray: #e6e3df;
+  --fs-cool-gray: #ecedf0;
+  --fs-white: #ffffff;
+  --fs-black: #000000;
+
+  --background: var(--fs-warm-white);
+  --foreground: var(--fs-espresso);
+  --surface: var(--fs-white);
+  --surface-hover: var(--fs-warm-gray);
+  --border: var(--fs-warm-gray);
+  --muted: var(--fs-cool-gray);
+  --accent: var(--fs-copper);
+  --accent-foreground: var(--fs-white);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-fs-espresso: var(--fs-espresso);
+  --color-fs-copper: var(--fs-copper);
+  --color-fs-copper-light: var(--fs-copper-light);
+  --color-fs-warm-white: var(--fs-warm-white);
+  --color-fs-warm-gray: var(--fs-warm-gray);
+  --color-fs-cool-gray: var(--fs-cool-gray);
+
+  --color-success: #2d6a4f;
+  --color-warning: #b45309;
+  --color-danger: #991b1b;
+
+  --font-sans: "Open Sans", system-ui, sans-serif;
+  --font-display: "Lato", "Open Sans", system-ui, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  ::selection {
+    background: var(--fs-copper);
+    color: var(--fs-white);
+  }
 }
