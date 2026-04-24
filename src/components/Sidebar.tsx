@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   LayoutDashboard,
-  FolderOpen,
+  Link2,
   Settings,
   Users,
   AppWindow,
@@ -19,7 +19,7 @@ interface SidebarProps {
 
 const employeeNav = [
   { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-  { label: "Files", href: "/files", icon: FolderOpen },
+  { label: "Links", href: "/links", icon: Link2 },
 ];
 
 const managerNav = [
