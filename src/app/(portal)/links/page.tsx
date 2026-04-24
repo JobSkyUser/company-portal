@@ -39,6 +39,13 @@ const companyLinks = [
     category: "Sales & Marketing",
   },
   {
+    name: "ThinkLodge",
+    description: "Sales enablement platform",
+    url: "https://thinklodge.app",
+    icon: "💡",
+    category: "Sales & Marketing",
+  },
+  {
     name: "Domo",
     description: "Business intelligence and data analytics",
     url: "https://fieldstonehomes.domo.com/home",
